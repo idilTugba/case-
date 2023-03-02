@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./styles.module.css"
 import logo from "./logo.png"
 import {Link} from "react-router-dom";
@@ -31,7 +30,7 @@ export default function Header() {
     return (
         <nav className="navbar navbar-expand-lg bg-white">
             <div className="container container-fluid">
-                <img src={logo} className="mx-2" alt="Alca Digital"/>
+                <Link to="/"><img src={logo} className="mx-2" alt="Alca Digital"/></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

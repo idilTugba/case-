@@ -1,0 +1,93 @@
+$red: #ED1C24;
+$pink: #FDE4E5;
+$text: #400E03;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
+
+.clear{
+  display: block;
+  font-size: 0;
+  line-height: 0;
+}
+
+.bttn{
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &_primary{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 24px;
+    border: none;
+    background: #FFFFFF;
+    color: $red;
+    
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 20px;
+    }
+  }
+
+  &_secondary{
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    align-items: center;
+    padding: 16px;
+    border-radius: 2px; 
+    
+    &_pink{
+      color: $red;
+      background: $pink;
+    }
+    &_red{
+      color: #FFFFFF;
+      background: $red;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 10px 6px;
+    }
+  }
+}
+
+
+
+.splide__arrow{
+  width: 48px !important;
+  height: 48px !important;
+  background: $text !important;
+  border-radius: 2px !important;
+
+  svg {
+    fill: white !important;
+  }
+}
+
+.splide__pagination__page{
+  background: $red !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin: 6px !important;
+  &.is-active{
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+.splide__pagination {
+  bottom: -2.5em!important;
+}
+ 

@@ -1,7 +1,7 @@
-import React from 'react'
+import {Link} from 'react-router-dom'
 import Slider from './../../components/slider/';
 import { SliderProvider } from "./../../context/slider";
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 export default function Home() {
     return (
@@ -24,9 +24,9 @@ export default function Home() {
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-start align-items-sm-center flex-column flex-sm-row pb-3 mb-2 mb-sm-4">
                         <h2 className="text-white">Feel the excellent wet braking with Driveways!</h2>
-                        <button className="bttn bttn_primary">Watch All Videos</button>
+                        <Link to="/guides"><button className="bttn bttn_primary">Watch All Videos</button></Link>
                     </div>
-                    <div className={styles.video_content}>
+                    <div className={styles.video}>
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/i7YvS_O6sz4" title="DriveWays" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </div>

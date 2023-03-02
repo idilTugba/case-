@@ -26,8 +26,8 @@ export default function index() {
                         perPage: 1,
                     }
                 },} }>
-                <SplideTrack>
                 
+                <SplideTrack>
                         {data.map((item, index)=>{
                             return(
                                 <SplideSlide key={index}>

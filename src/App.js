@@ -1,4 +1,4 @@
-import Header from './navbar/';
+import Header from './components/navbar/';
 import { Outlet } from "react-router-dom";
 
 function App() {
