@@ -1,0 +1,61 @@
+
+.slider{
+  
+  .splide{
+    &__arrow{
+      width: 48px;
+      height: 48px;
+      background: $text;
+      border-radius: 2px;
+
+      &--prev{
+        left: -3rem
+      }
+      
+      &--next{
+        right: -3rem
+      }
+    
+      svg {
+        fill: white;
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 30px;
+        height: 30px;
+
+        &--prev{
+          left: -1.5rem
+        }
+        
+        &--next{
+          right: -1.5rem
+        }
+
+        svg{
+          height: 1em;
+          width: 1em;
+        }
+      }
+    }
+    
+    &__pagination {
+      bottom: -2.5em;
+      
+      &__page{
+        background: $red;
+        width: 6px;
+        height: 6px;
+        margin: 6px;
+        
+        &.is-active{
+          background: $red;
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}
+
+  

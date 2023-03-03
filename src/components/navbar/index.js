@@ -1,5 +1,4 @@
-import styles from "./styles.module.css"
-import logo from "./logo.png"
+import logo from "./../../assest/images/logo.png"
 import {Link} from "react-router-dom";
 
 export default function Header() {
@@ -39,7 +38,7 @@ export default function Header() {
                         {links.map( link => {
                             return(
                                 <li key={link.name} className="nav-item">
-                                    <Link className={styles.link + " nav-link"} to={link.path}> {link.name.toUpperCase()}</Link>
+                                    <Link className="link nav-link" to={link.path}> {link.name.toUpperCase()}</Link>
                                 </li>
                             )
                         })}

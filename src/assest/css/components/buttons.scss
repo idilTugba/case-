@@ -1,0 +1,44 @@
+.bttn{
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px;
+  
+    &__primary{
+      font-size: 16px;
+      line-height: 20px;
+      padding: 16px 24px;
+      border: none;
+      background: #FFFFFF;
+      color: $red;
+      
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 12px 20px;
+      }
+    }
+  
+    &__secondary{
+      font-size: 12px;
+      line-height: 15px;
+      border: none;
+      align-items: center;
+      border-radius: 2px; 
+
+      &--pink{
+        color: $red;
+        background: $pink;
+      }
+      &--red{
+        color: #FFFFFF;
+        background: $red;
+      }
+      
+      @media screen and (max-width: 768px) {
+          padding: 10px 6px;
+      }
+    }
+  
+  }
+  
+  

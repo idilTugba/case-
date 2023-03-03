@@ -7,9 +7,14 @@ import '@splidejs/splide/css';
 
 export default function index() {
     const {data} = UseSlider();
+    
+    const style = {
+        button1 : "bttn__secondary--pink",
+        button2 : "bttn__secondary--red"
+    }
 
     return (
-        <div className="row position-relative">
+        <div className="slider row position-relative">
             <Splide hasTrack={ false } options={ {
                 rewind: true, 
                 gap   : '1.5rem', 
@@ -17,21 +22,20 @@ export default function index() {
                 perPage: 3, 
                 perMove: 1, 
                 trimSpace: false,
-                padding: { left: 60, right: 60 },
                 breakpoints: {
-                    1024: {
+                    1200: {
                         perPage: 2,
                     },
                     767: {
                         perPage: 1,
                     }
                 },} }>
-                
+
                 <SplideTrack>
                         {data.map((item, index)=>{
                             return(
                                 <SplideSlide key={index}>
-                                    <Box children={item}/>
+                                    <Box style={style} data={item}/>
                                 </SplideSlide>
                             )
                         })}
